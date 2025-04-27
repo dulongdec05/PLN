@@ -1,38 +1,279 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  color: #000400;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 64px;
+}
+
+.navbar {
+  padding: 20px 0;
+  background: #FFFFFF;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.nav-link {
+  font-size: 16px;
+  text-decoration: none;
+  color: #000400;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.btn {
+  padding: 10px 24px;
+  border-radius: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 4, 0, 0.15);
+}
+
+.btn-outline {
+  color: #000400;
+  background: transparent;
+}
+
+.btn-gradient {
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #064A00 0%, #5EEABA 100%);
+  border: none;
+}
+
+.hero {
+  padding: 112px 0;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 56px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
+}
+
+.hero-text {
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+
+.hero-image {
+  flex: 1;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+}
+
+.features {
+  padding: 112px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-bottom: 64px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.feature-card {
+  text-align: center;
+}
+
+.feature-image {
+  height: 240px;
+  margin-bottom: 32px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+}
+
+.feature-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.cta {
+  padding: 112px 0;
+  background: #FFFFFF;
+}
+
+.cta-container {
   display: flex;
-  flex-direction: column;
+  gap: 80px;
   align-items: center;
+}
+
+.cta-content {
+  flex: 1;
+}
+
+.cta-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+
+.cta-form {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.cta-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid rgba(0, 4, 0, 0.15);
+  border-radius: 12px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 16px;
+}
+
+.footer {
+  padding: 80px 0;
+  background: #FFFFFF;
+  border-top: 1px solid rgba(0, 4, 0, 0.15);
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 32px;
+  margin: 32px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-link {
+  color: #000400;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+  border-top: 1px solid rgba(0, 4, 0, 0.15);
+  font-size: 14px;
+}
+
+.footer-legal {
+  display: flex;
+  gap: 24px;
+}
+
+.legal-link {
+  color: #000400;
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.logo img {
+  height: 24px;
+  width: auto;
+}
+
+.nav-link-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-link-dropdown img {
+  width: 16px;
+  height: 16px;
+}
+
+.btn-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-with-icon img {
+  width: 16px;
+  height: 16px;
+}
+
+.feature-icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 24px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .hero {
+    flex-direction: column;
+    padding: 64px 0;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-container {
+    flex-direction: column;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
   }
 }
+
